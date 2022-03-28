@@ -10,6 +10,8 @@ long long binpow(long long a, long long b, long long m) {
         return res;
     }
 
-   	int Nth_term(int a, int r, int n){
+   	int Nth_term(int a, int r, int n)
+{
    	    const int mod = 1e9 + 7;
+
    	    return a * binpow(r, n-1, mod) % mod;
